@@ -12,7 +12,6 @@ def string_to_lexemas(string):
     for palavra in string.split(" "):
         lexema_valorado = f"{encontrar_lexema(palavra)}({palavra})"
         lexemas_na_string.append(lexema_valorado)
-
     return "".join(lexemas_na_string)
 
 def configurar_tabela_lexica():
@@ -28,10 +27,8 @@ def configurar_tabela_lexica():
 
 if __name__ == "__main__":
 
-    string_teste = '123 "string"'
-
     configurar_tabela_lexica()
+    print(table)
+    lexemas_na_string_string_unica = string_to_lexemas(input("digite uma linha de código:\n"))
 
-    lexemas_na_string_string_unica = string_to_lexemas(string_teste)
-
-    print(lexemas_na_string_string_unica)
+    print('em lexemas:\n',lexemas_na_string_string_unica)
