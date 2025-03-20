@@ -1,8 +1,8 @@
-\d+                 --> NUM
-"[\w]*"|'[\w]*'     --> STRING
-[a-zA-Z]+           --> ID
 \=                  --> EQUAL
 \+                  --> PLUS
 \-                  --> MINUS
 \;                  --> ENDlN
+"[\w]*"|'[\w]*'     --> STRING
+[a-zA-Z]+           --> ID
+\d+                 --> NUM
 \n                  --> 
